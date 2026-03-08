@@ -82,6 +82,19 @@
 
         .family-box strong { color: #ffffff; }
 
+        .warning-box {
+            background: #1a1a0d;
+            border: 1px solid #3a3a1b;
+            border-left: 4px solid #ffc107;
+            border-radius: 10px;
+            padding: 18px 22px;
+            margin: 16px 0 24px;
+            font-size: 14px;
+            color: #fff9c4;
+        }
+
+        .warning-box strong { color: #ffffff; }
+
         h2 {
             font-size: 17px;
             font-weight: 600;
@@ -166,8 +179,8 @@
         <strong>Our commitment:</strong> We built Smart Alarm : Wake Up Challenge to help
         you wake up — not to collect your data. This policy explains exactly what
         information is used and why. <strong>We do not sell, rent, or trade your
-        personal data to anyone. The app contains no ads, no tracking SDKs, and
-        no in-app purchases.</strong>
+        personal data to anyone.</strong> The app displays advertisements powered
+        by Google AdMob and offers a one-time purchase option to remove ads permanently.
     </div>
 
     <div class="family-box">
@@ -176,8 +189,8 @@
         Protection Act (COPPA), the General Data Protection Regulation (GDPR)
         provisions for minors, and Google Play's Families Policy. We do
         <strong>not</strong> knowingly collect personal information from children.
-        The app is <strong>completely ad-free</strong> and contains no third-party
-        tracking or analytics SDKs.
+        Advertisements shown are non-personalized and comply with Google's
+        child-directed ad policies.
     </div>
 
     <!-- 1 -->
@@ -202,18 +215,46 @@
             snooze duration, challenge type &amp; difficulty. Stored in a local Room database.</li>
         <li><strong>App preferences</strong> – settings such as vibration, dark mode, snooze
             visibility. Stored in SharedPreferences on-device only.</li>
+        <li><strong>Purchase status</strong> – whether you have purchased the ad-free upgrade.
+            Stored locally and verified through Google Play Billing.</li>
     </ul>
     <p>
-        This data <strong>never leaves your device</strong>. It is not transmitted to
-        any server, cloud service, or third party.
+        This data <strong>never leaves your device</strong> (except for purchase verification
+        with Google Play). It is not transmitted to any server owned by us.
     </p>
 
-    <h3>2b. Third-party SDKs</h3>
+    <h3>2b. Data collected by third-party SDKs</h3>
     <p>
-        The app does <strong>not</strong> integrate any third-party advertising,
-        analytics, or tracking SDKs. <strong>No data is collected or transmitted
-        by any third party through this app.</strong>
+        The app integrates the following third-party services that may collect
+        certain data as described below:
     </p>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Service</th>
+                <th>Purpose</th>
+                <th>Data Collected</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>Google AdMob</strong></td>
+                <td>Display advertisements</td>
+                <td>Device identifiers, IP address, ad interaction data.
+                    For users who have not consented to personalized ads or
+                    for child-directed content, only <strong>non-personalized
+                    ads</strong> are shown, which collect limited data.</td>
+            </tr>
+            <tr>
+                <td><strong>Google Play Billing</strong></td>
+                <td>Process one-time purchase for ad removal</td>
+                <td>Purchase transaction data, Google account information
+                    (handled entirely by Google Play — we only receive
+                    confirmation of purchase status).</td>
+            </tr>
+        </tbody>
+    </table>
 
     <p>
         We do <strong>not</strong> operate any backend server that stores your alarm data,
@@ -234,9 +275,8 @@
         <li>❌ Photos or media files (camera is used only for the optional photo
             challenge — images are processed locally and <strong>never</strong>
             uploaded or stored permanently)</li>
-        <li>❌ Persistent identifiers linked to children</li>
-        <li>❌ Advertising IDs or device fingerprints</li>
-        <li>❌ Any usage analytics or telemetry data</li>
+        <li>❌ Persistent identifiers linked to children (beyond what AdMob
+            requires for non-personalized ads)</li>
     </ul>
 
     <!-- 4 -->
@@ -259,22 +299,27 @@
             to children</li>
     </ul>
 
-    <h3>4b. What We Do NOT Do With Children's Data</h3>
+    <h3>4b. Advertising to Children</h3>
+    <div class="warning-box">
+        📢 <strong>Child-Safe Advertising:</strong> For users identified as children
+        or when the app is used in child-directed mode, we serve only
+        <strong>non-personalized advertisements</strong> that comply with Google's
+        child-directed ad policies. These ads do not use behavioural targeting
+        or interest-based profiling.
+    </div>
+
+    <h3>4c. What We Do NOT Do With Children's Data</h3>
     <ul>
         <li>🚫 We do <strong>not</strong> collect personal information from children under 13
-            (or under 16 in the EU)</li>
-        <li>🚫 We do <strong>not</strong> display any advertisements</li>
+            (or under 16 in the EU) beyond what is required for non-personalized ads</li>
         <li>🚫 We do <strong>not</strong> use behavioural advertising or interest-based
-            tracking for any user</li>
+            tracking for children</li>
         <li>🚫 We do <strong>not</strong> allow children to share personal data publicly</li>
-        <li>🚫 We do <strong>not</strong> use persistent identifiers to track children
-            across apps or websites</li>
         <li>🚫 We do <strong>not</strong> require children to provide personal data beyond
             what is necessary to use the app (none is required)</li>
-        <li>🚫 We do <strong>not</strong> include any third-party tracking or analytics SDKs</li>
     </ul>
 
-    <h3>4c. Parental Rights</h3>
+    <h3>4d. Parental Rights</h3>
     <p>
         As a parent or legal guardian, you have the right to:
     </p>
@@ -285,6 +330,8 @@
         <li>🗑️ <strong>Delete</strong> all app data by going to <em>Settings → Apps →
             Smart Alarm → Storage → Clear Data</em>, or by uninstalling the app</li>
         <li>🚫 <strong>Refuse</strong> further collection of data by uninstalling the app</li>
+        <li>💰 <strong>Remove ads</strong> permanently by purchasing the one-time
+            ad-free upgrade (no recurring charges)</li>
         <li>📧 <strong>Contact us</strong> with any concerns at
             <a href="mailto:ajnasoftwares@gmail.com">ajnasoftwares@gmail.com</a></li>
     </ul>
@@ -292,13 +339,14 @@
         We will respond to parental requests within <strong>48 hours</strong>.
     </p>
 
-    <h3>4d. Parental Supervision Recommendation</h3>
+    <h3>4e. Parental Supervision Recommendation</h3>
     <p>
         While our app is safe for all ages, we recommend that parents and guardians:
     </p>
     <ul>
         <li>Supervise younger children's use of any mobile application</li>
         <li>Review the app's settings and alarm configurations</li>
+        <li>Consider purchasing the ad-free upgrade for a completely ad-free experience</li>
         <li>Manage notification permissions on behalf of younger users</li>
         <li>Contact us if they have any concerns about the app's content or
             behaviour</li>
@@ -366,20 +414,85 @@
                     notification so you can see and dismiss it immediately,
                     even when the device is locked.</td>
             </tr>
+            <tr>
+                <td><code>INTERNET</code></td>
+                <td>Required for displaying advertisements (Google AdMob) and
+                    processing in-app purchases (Google Play Billing). <strong>We
+                    do not transmit any personal data to our own servers.</strong></td>
+            </tr>
+            <tr>
+                <td><code>ACCESS_NETWORK_STATE</code></td>
+                <td>Check network connectivity before loading ads to avoid
+                    unnecessary errors and improve user experience.</td>
+            </tr>
+            <tr>
+                <td><code>com.android.vending.BILLING</code></td>
+                <td>Process the one-time in-app purchase to remove ads
+                    permanently through Google Play Billing.</td>
+            </tr>
         </tbody>
     </table>
 
     <!-- 6 -->
     <h2>6. Advertising &amp; In-App Purchases</h2>
+
+    <h3>6a. Advertisements</h3>
     <p>
-        Smart Alarm : Wake Up Challenge is <strong>completely free</strong> and contains:
+        Smart Alarm : Wake Up Challenge displays advertisements powered by
+        <strong>Google AdMob</strong>. The following types of ads may be shown:
     </p>
     <ul>
-        <li>✅ <strong>No advertisements</strong> of any kind</li>
-        <li>✅ <strong>No in-app purchases</strong> or subscriptions</li>
-        <li>✅ <strong>No third-party advertising or analytics SDKs</strong></li>
-        <li>✅ <strong>No tracking or behavioural profiling</strong></li>
+        <li><strong>Banner ads</strong> – Small ads displayed at the bottom of certain screens</li>
+        <li><strong>Interstitial ads</strong> – Full-screen ads shown between certain actions
+            (e.g., after dismissing multiple alarms)</li>
     </ul>
+
+    <h3>6b. Ad Data Collection</h3>
+    <p>
+        Google AdMob may collect certain data to serve advertisements, including:
+    </p>
+    <ul>
+        <li>Device identifiers (Advertising ID)</li>
+        <li>IP address</li>
+        <li>Device information (model, OS version)</li>
+        <li>Ad interaction data (clicks, views)</li>
+    </ul>
+    <p>
+        For more information, please review
+        <a href="https://policies.google.com/privacy" target="_blank">Google's Privacy Policy</a>
+        and <a href="https://support.google.com/admob/answer/6128543" target="_blank">
+        How Google uses data when you use our partners' sites or apps</a>.
+    </p>
+
+    <h3>6c. Opting Out of Personalized Ads</h3>
+    <p>
+        You can opt out of personalized advertising by:
+    </p>
+    <ul>
+        <li>Adjusting your device's ad settings: <em>Settings → Google → Ads →
+            Opt out of Ads Personalization</em></li>
+        <li>Resetting your Advertising ID in the same settings menu</li>
+        <li>Purchasing the one-time ad-free upgrade to remove all advertisements</li>
+    </ul>
+
+    <h3>6d. One-Time Purchase (Remove Ads)</h3>
+    <p>
+        We offer a <strong>one-time in-app purchase</strong> that permanently removes
+        all advertisements from the app. Key details:
+    </p>
+    <ul>
+        <li>💰 <strong>One-time payment</strong> – No subscriptions or recurring charges</li>
+        <li>♾️ <strong>Lifetime access</strong> – Once purchased, ads are removed forever</li>
+        <li>🔄 <strong>Restore anytime</strong> – If you reinstall the app or switch devices,
+            you can restore your purchase at no additional cost</li>
+        <li>🔒 <strong>Secure payment</strong> – All transactions are processed securely
+            through Google Play Billing</li>
+    </ul>
+    <p>
+        We do not receive or store any payment card details. All payment processing
+        is handled by Google Play. We only receive confirmation that a purchase
+        was successful.
+    </p>
 
     <!-- 7 -->
     <h2>7. Data Retention &amp; Deletion</h2>
@@ -393,6 +506,10 @@
         <li>Uninstalling the app — all local data is permanently removed.</li>
     </ul>
     <p>
+        <strong>Note:</strong> Your ad-free purchase is tied to your Google account
+        and can be restored at any time, even after clearing app data or reinstalling.
+    </p>
+    <p>
         <strong>Parents/Guardians:</strong> You can delete all your child's app
         data at any time using the methods above. No residual data remains on
         any server since we do not operate one.
@@ -401,17 +518,14 @@
     <!-- 8 -->
     <h2>8. Security</h2>
     <p>
-        Because we do not transmit your data to any external servers and do not
-        include any third-party tracking SDKs, the security risk to your personal
-        data is minimal. The device's own storage encryption and Android's app
-        sandboxing protect locally stored data. We take reasonable measures to
-        ensure that:
+        We take reasonable measures to protect your data:
     </p>
     <ul>
-        <li>No personal data is collected or transmitted</li>
-        <li>All data remains on-device and under your control</li>
-        <li>No third-party SDKs are included in the app</li>
+        <li>No personal data is transmitted to servers owned by us</li>
+        <li>All local data is protected by Android's app sandboxing and device encryption</li>
+        <li>In-app purchases are processed securely through Google Play Billing</li>
         <li>Camera data (photo challenge) is never stored or transmitted</li>
+        <li>Ad data collection is handled by Google AdMob according to their security standards</li>
     </ul>
 
     <!-- 9 -->
@@ -435,17 +549,43 @@
 
     <!-- 10 -->
     <h2>10. Third-Party Services</h2>
-    <p>The app uses the following third-party service for distribution only:</p>
-    <ul>
-        <li>
-            <a href="https://policies.google.com/privacy" target="_blank">
-                Google Play Services</a> – app distribution and updates
-        </li>
-    </ul>
+    <p>The app integrates the following third-party services:</p>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Service</th>
+                <th>Purpose</th>
+                <th>Privacy Policy</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>Google Play Services</strong></td>
+                <td>App distribution and updates</td>
+                <td><a href="https://policies.google.com/privacy" target="_blank">
+                    Google Privacy Policy</a></td>
+            </tr>
+            <tr>
+                <td><strong>Google AdMob</strong></td>
+                <td>Display advertisements</td>
+                <td><a href="https://policies.google.com/privacy" target="_blank">
+                    Google Privacy Policy</a><br>
+                    <a href="https://support.google.com/admob/answer/6128543" target="_blank">
+                    How Google uses data</a></td>
+            </tr>
+            <tr>
+                <td><strong>Google Play Billing</strong></td>
+                <td>Process one-time in-app purchase</td>
+                <td><a href="https://policies.google.com/privacy" target="_blank">
+                    Google Privacy Policy</a></td>
+            </tr>
+        </tbody>
+    </table>
+
     <p>
-        We do not integrate any third-party advertising, analytics, or tracking
-        services within the app. We are not responsible for Google Play's own
-        privacy practices — please review their policy separately.
+        We are not responsible for the privacy practices of these third-party
+        services. Please review their respective privacy policies.
     </p>
 
     <!-- 11 -->
@@ -453,10 +593,11 @@
     <p>
         We may update this Privacy Policy from time to time. When we do, we
         will revise the "Last updated" date at the top of this page. For
-        <strong>material changes</strong> that affect children's privacy, we
-        will make reasonable efforts to provide prominent notice (such as an
-        in-app notification). Continued use of the app after changes are posted
-        constitutes your acceptance of the updated policy.
+        <strong>material changes</strong> that affect children's privacy or
+        data collection practices, we will make reasonable efforts to provide
+        prominent notice (such as an in-app notification). Continued use of
+        the app after changes are posted constitutes your acceptance of the
+        updated policy.
     </p>
 
     <!-- 12 -->
@@ -473,6 +614,10 @@
     <p>
         <strong>For parental inquiries:</strong> Please include "PARENT REQUEST"
         in the email subject line. We will respond within <strong>48 hours</strong>.
+    </p>
+    <p>
+        <strong>For purchase issues:</strong> Please include "PURCHASE SUPPORT"
+        in the email subject line along with your Google Play order number.
     </p>
 
     <footer>
