@@ -79,6 +79,19 @@
 
         .family-box strong { color: #ffffff; }
 
+        .purchase-box {
+            background: #0d0d1a;
+            border: 1px solid #1b1b3a;
+            border-left: 4px solid #7c4dff;
+            border-radius: 10px;
+            padding: 18px 22px;
+            margin: 16px 0 24px;
+            font-size: 14px;
+            color: #b39ddb;
+        }
+
+        .purchase-box strong { color: #ffffff; }
+
         h2 {
             font-size: 17px;
             font-weight: 600;
@@ -129,6 +142,30 @@
             color: #80cbc4;
         }
 
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 16px 0 24px;
+            font-size: 14px;
+        }
+
+        th {
+            background: #0d1f2d;
+            color: #4fc3f7;
+            text-align: left;
+            padding: 10px 14px;
+            border: 1px solid #1e3448;
+        }
+
+        td {
+            padding: 10px 14px;
+            border: 1px solid #1a1a1a;
+            color: #bdbdbd;
+            vertical-align: top;
+        }
+
+        tr:nth-child(even) td { background: #0d0d0d; }
+
         footer {
             text-align: center;
             margin-top: 64px;
@@ -160,10 +197,11 @@
 
     <div class="family-box">
         👨‍👩‍👧‍👦 <strong>Parents &amp; Guardians:</strong> This app is designed for users
-        of <strong>all ages</strong>. It is <strong>completely free</strong> with
-        <strong>no ads</strong> and <strong>no in-app purchases</strong>. If your
-        child uses this app, you agree to these Terms on their behalf. We encourage
-        you to read these Terms and supervise your child's use of the app.
+        of <strong>all ages</strong>. The app is <strong>free to use</strong> and
+        displays advertisements. A <strong>one-time purchase</strong> option is
+        available to remove all ads permanently. If your child uses this app,
+        you agree to these Terms on their behalf. We encourage you to read these
+        Terms and supervise your child's use of the app.
     </div>
 
     <!-- 1 -->
@@ -195,19 +233,27 @@
         the basic alarm, stopwatch, timer, and world clock features.
     </p>
 
-    <h3>2b. Parental Responsibility</h3>
+    <h3>2b. In-App Purchases</h3>
+    <p>
+        The app offers a one-time purchase to remove advertisements. Users under
+        18 must have parental or guardian consent before making any purchase.
+        Parents and guardians are responsible for any purchases made by minors
+        on their devices.
+    </p>
+
+    <h3>2c. Parental Responsibility</h3>
     <ul>
         <li>Users <strong>under 13</strong>: Must have parental or guardian
             consent and supervision.</li>
         <li>Users <strong>13 – 17</strong>: Should have parental awareness of
-            app usage.</li>
+            app usage and any purchases.</li>
         <li>Users <strong>18+</strong>: Full acceptance of these Terms.</li>
     </ul>
 
     <!-- 3 -->
     <h2>3. Description of the App</h2>
     <p>
-        Smart Alarm : Wake Up Challenge is a <strong>completely free, ad-free</strong>
+        Smart Alarm : Wake Up Challenge is a <strong>free-to-use</strong>
         Android alarm application that helps users wake up on time through:
     </p>
     <ul>
@@ -220,26 +266,147 @@
     </ul>
     <p>
         All features are designed to be appropriate for users of all ages.
-        The app contains <strong>no advertisements, no in-app purchases,
-        no subscriptions, and no third-party tracking</strong>.
+        The app displays advertisements and offers a one-time purchase option
+        to remove them permanently.
     </p>
 
     <!-- 4 -->
-    <h2>4. Cost &amp; Monetisation</h2>
+    <h2>4. Advertising</h2>
+
+    <h3>4a. Types of Advertisements</h3>
     <p>
-        Smart Alarm : Wake Up Challenge is provided <strong>completely free of
-        charge</strong>. The app:
+        The app displays advertisements provided by <strong>Google AdMob</strong>.
+        You may see:
     </p>
     <ul>
-        <li>✅ Contains <strong>no advertisements</strong> of any kind</li>
-        <li>✅ Contains <strong>no in-app purchases</strong></li>
-        <li>✅ Contains <strong>no subscriptions</strong></li>
-        <li>✅ Contains <strong>no third-party advertising or tracking SDKs</strong></li>
-        <li>✅ Will <strong>never charge you</strong> to use any feature</li>
+        <li><strong>Banner ads</strong> – Small advertisements displayed at the
+            bottom of certain screens</li>
+        <li><strong>Interstitial ads</strong> – Full-screen advertisements shown
+            between certain actions (e.g., after dismissing an alarm or switching
+            between tabs multiple times)</li>
+    </ul>
+
+    <h3>4b. Child-Directed Advertising</h3>
+    <p>
+        For users identified as children, we serve <strong>non-personalized
+        advertisements</strong> that comply with Google's child-directed content
+        policies. These ads do not use behavioural targeting.
+    </p>
+
+    <h3>4c. Your Choices</h3>
+    <p>You can manage your advertising experience by:</p>
+    <ul>
+        <li>Purchasing the one-time ad-free upgrade to remove all advertisements</li>
+        <li>Opting out of personalized ads in your device settings:
+            <em>Settings → Google → Ads → Opt out of Ads Personalization</em></li>
+    </ul>
+
+    <h3>4d. Third-Party Terms</h3>
+    <p>
+        Advertisements are provided by Google AdMob. By using the app, you also
+        agree to be bound by:
+    </p>
+    <ul>
+        <li><a href="https://policies.google.com/terms" target="_blank">Google Terms of Service</a></li>
+        <li><a href="https://policies.google.com/privacy" target="_blank">Google Privacy Policy</a></li>
     </ul>
 
     <!-- 5 -->
-    <h2>5. License to Use</h2>
+    <h2>5. In-App Purchase (Remove Ads)</h2>
+
+    <div class="purchase-box">
+        💎 <strong>Premium Feature:</strong> A one-time in-app purchase is available
+        to permanently remove all advertisements from the app. This is a single
+        payment with <strong>no subscriptions or recurring charges</strong>.
+    </div>
+
+    <h3>5a. Purchase Terms</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>Feature</th>
+                <th>Details</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>Product</strong></td>
+                <td>Remove Ads (One-Time Purchase)</td>
+            </tr>
+            <tr>
+                <td><strong>Type</strong></td>
+                <td>Non-consumable in-app purchase</td>
+            </tr>
+            <tr>
+                <td><strong>Duration</strong></td>
+                <td>Lifetime (permanent)</td>
+            </tr>
+            <tr>
+                <td><strong>Recurring Charges</strong></td>
+                <td>None — single payment only</td>
+            </tr>
+            <tr>
+                <td><strong>Restoration</strong></td>
+                <td>Can be restored on the same Google account at no extra cost</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h3>5b. Payment Processing</h3>
+    <p>
+        All purchases are processed securely through <strong>Google Play Billing</strong>.
+        We do not receive, process, or store any payment card details. Google Play
+        handles all payment information according to their security standards.
+    </p>
+
+    <h3>5c. Pricing</h3>
+    <p>
+        The price of the ad-free upgrade is displayed in the app in your local
+        currency. Prices may vary by region and are subject to change. The
+        applicable price at the time of purchase will be clearly displayed
+        before you complete the transaction.
+    </p>
+
+    <h3>5d. Refunds</h3>
+    <p>
+        All purchases are subject to <strong>Google Play's refund policy</strong>.
+        If you believe you are entitled to a refund, please contact Google Play
+        Support directly:
+    </p>
+    <ul>
+        <li><a href="https://support.google.com/googleplay/answer/2479637" target="_blank">
+            Google Play Refund Policy</a></li>
+    </ul>
+    <p>
+        We cannot process refunds directly as all transactions are handled by
+        Google Play.
+    </p>
+
+    <h3>5e. Restoration</h3>
+    <p>
+        If you reinstall the app, switch devices, or clear app data, you can
+        restore your previous purchase at no additional cost. Simply tap the
+        "Restore Purchase" option in the app while signed into the same Google
+        account used for the original purchase.
+    </p>
+
+    <h3>5f. Minors and Purchases</h3>
+    <p>
+        Users under 18 must obtain parental or guardian consent before making
+        any purchase. Parents and guardians are responsible for:
+    </p>
+    <ul>
+        <li>Managing in-app purchase settings on their child's device</li>
+        <li>Supervising any purchases made by minors</li>
+        <li>Any unauthorised purchases made by minors on their devices</li>
+    </ul>
+    <p>
+        You can prevent unauthorised purchases by enabling purchase authentication
+        in Google Play settings.
+    </p>
+
+    <!-- 6 -->
+    <h2>6. License to Use</h2>
     <p>
         We grant you a limited, non-exclusive, non-transferable, revocable licence
         to install and use the app on Android devices you own or control, solely
@@ -252,10 +419,13 @@
         <li>Rent, lease, or sublicense the app to any third party</li>
         <li>Use the app for any unlawful or unauthorised purpose</li>
         <li>Remove or alter any proprietary notices or labels on the app</li>
+        <li>Circumvent, disable, or interfere with any advertisement display
+            mechanisms in the app</li>
+        <li>Use any means to artificially generate ad impressions or clicks</li>
     </ul>
 
-    <!-- 6 -->
-    <h2>6. Alarm Reliability Disclaimer</h2>
+    <!-- 7 -->
+    <h2>7. Alarm Reliability Disclaimer</h2>
 
     <div class="warning-box">
         ⚠️ <strong>Important:</strong> Smart Alarm is not a safety-critical
@@ -288,8 +458,8 @@
         built-in clock application.
     </p>
 
-    <!-- 7 -->
-    <h2>7. Notifications Permission</h2>
+    <!-- 8 -->
+    <h2>8. Notifications Permission</h2>
     <p>
         On Android 13 and above, the app requests the
         <code>POST_NOTIFICATIONS</code> permission to display upcoming alarm
@@ -303,8 +473,8 @@
         permissions on your child's device through Android's system settings.
     </p>
 
-    <!-- 8 -->
-    <h2>8. Intellectual Property</h2>
+    <!-- 9 -->
+    <h2>9. Intellectual Property</h2>
     <p>
         All content within Smart Alarm : Wake Up Challenge — including but not
         limited to the app name, logo, UI design, challenge logic, sound assets,
@@ -316,8 +486,8 @@
         Nothing in these Terms transfers any intellectual property rights to you.
     </p>
 
-    <!-- 9 -->
-    <h2>9. User Conduct</h2>
+    <!-- 10 -->
+    <h2>10. User Conduct</h2>
     <p>All users, regardless of age, agree not to use the app to:</p>
     <ul>
         <li>Harass, harm, or annoy other people</li>
@@ -325,14 +495,16 @@
         <li>Attempt to interfere with the proper functioning of the app</li>
         <li>Use automated means to access or scrape the app</li>
         <li>Share the app in a way that could harm others</li>
+        <li>Manipulate or interfere with advertisements in any way</li>
+        <li>Attempt to fraudulently obtain the ad-free feature without payment</li>
     </ul>
     <p>
         <strong>Parents/Guardians</strong> are responsible for monitoring their
         child's compliance with these conduct rules.
     </p>
 
-    <!-- 10 -->
-    <h2>10. Safety — Physical Challenges</h2>
+    <!-- 11 -->
+    <h2>11. Safety — Physical Challenges</h2>
 
     <div class="warning-box">
         ⚠️ <strong>Shake Challenge Warning:</strong> The "Shake" wake-up challenge
@@ -352,8 +524,8 @@
         resulting from the use of physical wake-up challenges.
     </p>
 
-    <!-- 11 -->
-    <h2>11. Disclaimer of Warranties</h2>
+    <!-- 12 -->
+    <h2>12. Disclaimer of Warranties</h2>
     <p>
         The app is provided <strong>"as is"</strong> and
         <strong>"as available"</strong> without warranties of any kind, either
@@ -365,10 +537,12 @@
         <li>Guarantee that the app will be uninterrupted, error-free, or
             free of viruses</li>
         <li>Accuracy or reliability of any content displayed in the app</li>
+        <li>Availability or content of third-party advertisements</li>
+        <li>Continuous availability of the ad-free purchase option</li>
     </ul>
 
-    <!-- 12 -->
-    <h2>12. Limitation of Liability</h2>
+    <!-- 13 -->
+    <h2>13. Limitation of Liability</h2>
     <p>
         To the maximum extent permitted by applicable law, Ajna Softwares and
         its affiliates, officers, employees, and agents shall not be liable for:
@@ -379,25 +553,28 @@
         <li>Damages resulting from a missed alarm or failure to wake up</li>
         <li>Physical damage to devices during challenges (e.g., shake challenge)</li>
         <li>Any harm resulting from a minor's unsupervised use of the app</li>
+        <li>Content displayed in third-party advertisements</li>
+        <li>Issues with payment processing handled by Google Play</li>
+        <li>Unauthorised purchases made by minors</li>
     </ul>
     <p>
-        Since the app is <strong>completely free</strong> with no paid features,
-        our total liability to you for any claim arising from your use of the
-        app shall not exceed <strong>zero</strong>.
+        Our total liability to you for any claim arising from your use of the
+        app shall not exceed the amount you paid for the ad-free upgrade, or
+        <strong>zero</strong> if you have not made any purchase.
     </p>
 
-    <!-- 13 -->
-    <h2>13. Indemnification</h2>
+    <!-- 14 -->
+    <h2>14. Indemnification</h2>
     <p>
         You (and the parent or guardian of any minor user) agree to indemnify
         and hold harmless Ajna Softwares and its affiliates from any claims,
         damages, losses, liabilities, costs, or expenses (including legal fees)
-        arising from your (or your child's) use of the app or violation of these
-        Terms.
+        arising from your (or your child's) use of the app, violation of these
+        Terms, or any unauthorised purchases.
     </p>
 
-    <!-- 14 -->
-    <h2>14. Termination</h2>
+    <!-- 15 -->
+    <h2>15. Termination</h2>
     <p>
         We reserve the right to terminate or restrict your access to the app
         at any time, with or without notice, if we believe you have violated
@@ -405,21 +582,26 @@
     </p>
     <p>
         You may terminate your use of the app at any time by uninstalling it.
-        Sections 8, 11, 12, and 13 survive termination.
+        <strong>Note:</strong> Uninstalling the app does not entitle you to a
+        refund for any purchase. Your purchase remains valid and can be restored
+        if you reinstall the app.
     </p>
-
-    <!-- 15 -->
-    <h2>15. Changes to These Terms</h2>
     <p>
-        We may update these Terms from time to time. When we make material
-        changes, we will update the "Last updated" date at the top of this page.
-        For changes that materially affect the rights of minors, we will
-        provide prominent notice. Continued use of the app after changes are
-        posted constitutes your acceptance of the revised Terms.
+        Sections 9, 12, 13, and 14 survive termination.
     </p>
 
     <!-- 16 -->
-    <h2>16. Governing Law &amp; Dispute Resolution</h2>
+    <h2>16. Changes to These Terms</h2>
+    <p>
+        We may update these Terms from time to time. When we make material
+        changes, we will update the "Last updated" date at the top of this page.
+        For changes that materially affect the rights of minors or the terms of
+        purchase, we will provide prominent notice. Continued use of the app
+        after changes are posted constitutes your acceptance of the revised Terms.
+    </p>
+
+    <!-- 17 -->
+    <h2>17. Governing Law &amp; Dispute Resolution</h2>
     <p>
         These Terms are governed by the laws of <strong>India</strong>, without
         regard to its conflict-of-law provisions. Any dispute arising out of or
@@ -427,8 +609,8 @@
         jurisdiction of the competent courts located in India.
     </p>
 
-    <!-- 17 -->
-    <h2>17. Contact Us</h2>
+    <!-- 18 -->
+    <h2>18. Contact Us</h2>
     <p>
         If you have questions about these Terms, please contact:
     </p>
@@ -441,6 +623,10 @@
         <strong>For parental inquiries:</strong> Please include "PARENT REQUEST"
         in the email subject line for prioritised handling within
         <strong>48 hours</strong>.
+    </p>
+    <p>
+        <strong>For purchase support:</strong> Please include "PURCHASE SUPPORT"
+        in the email subject line along with your Google Play order number.
     </p>
 
     <footer>
