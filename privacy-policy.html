@@ -172,7 +172,7 @@
         <div class="badge">Legal</div>
         <h1>🔒 Privacy Policy</h1>
         <p class="app-name">Smart Alarm : Wake Up Challenge</p>
-        <p class="date">Package: com.vk.alarm &nbsp;·&nbsp; Last updated: Feb 2026</p>
+        <p class="date">Package: com.vk.alarm &nbsp;·&nbsp; Last updated: April 2026</p>
     </header>
 
     <div class="highlight-box">
@@ -217,6 +217,11 @@
             visibility. Stored in SharedPreferences on-device only.</li>
         <li><strong>Purchase status</strong> – whether you have purchased the ad-free upgrade.
             Stored locally and verified through Google Play Billing.</li>
+        <li><strong>Step count &amp; fitness data</strong> – Daily step count, estimated calories burned, 
+    active minutes, and your 7-day step history. Stored in a local Room database. 
+    <strong>Never transmitted to any server.</strong></li>
+<li><strong>Water intake logs</strong> – Daily water consumption entries and your personalised 
+    hydration goal. Stored locally on-device only.</li>
     </ul>
     <p>
         This data <strong>never leaves your device</strong> (except for purchase verification
@@ -430,6 +435,23 @@
                 <td>Process the one-time in-app purchase to remove ads
                     permanently through Google Play Billing.</td>
             </tr>
+            <tr>
+    <td><code>ACTIVITY_RECOGNITION</code></td>
+    <td>Required on Android 10+ to access the device's step counter and step detector sensors. Used exclusively by the built-in Step Counter feature, which the user must manually start. Without this permission, step tracking is fully disabled and the rest of the app continues to work normally. <strong>Not used for background activity monitoring or any form of profiling.</strong></td>
+</tr>
+<tr>
+    <td><code>FOREGROUND_SERVICE_HEALTH</code></td>
+    <td>Allows the step counting service to run as a foreground service of type "health" while the user has an active walking session. This keeps the step counter running reliably and shows a persistent notification so the user is always aware tracking is active. The service stops immediately when the user taps Stop or closes the session.</td>
+</tr>
+<tr>
+    <td><code>RECORD_AUDIO</code></td>
+    <td>Used <em>only</em> for the Voice Recall alarm challenge — the user must speak back a memorised sentence to dismiss the alarm. Audio is processed entirely on-device and is <strong>never recorded, stored, or transmitted</strong>. Microphone access ends as soon as the challenge is completed or the alarm is dismissed.</td>
+</tr>
+<tr>
+    <td><code>WRITE_EXTERNAL_STORAGE</code>
+        <br><small>(Android 9 and below only)</small></td>
+    <td>Required on older Android versions (API 28 and below) to save the reference photo used in the Photo Challenge. Not requested on Android 10 or later. The photo is stored locally and only used to verify the user's location when dismissing the alarm.</td>
+</tr>
         </tbody>
     </table>
 
